@@ -13,7 +13,7 @@ public class Player {
     }
 
     public Result battle(Player other, Rules rules) {
-        return rules.decide(this.move, other.move);
+        return rules.decideMatch(this.move, other.move);
     }
     
     public String getName() {
